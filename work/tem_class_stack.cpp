@@ -1,6 +1,4 @@
-/*
-作业2：类模板封装vector实现stack
-*/
+
 #include<iostream>
 #include<vector>
 using namespace std;

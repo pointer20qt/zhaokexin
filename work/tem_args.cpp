@@ -1,6 +1,4 @@
-/*
-作业3：模板参数包的递归拆包
-*/
+
 #include<iostream>
 #include<vector>
 using namespace std;

@@ -91,7 +91,7 @@ void Tswap(x& a, x& b){
 	//tem、a、b都有自己的p
 	x t = a;
 	//a里是b的p
-	a.operator  = (b);//operator（复制赋值）在创建的时候调用的浅拷贝，在释放空间的时候就会出现错误
+	a.operator  = (b);
 	//b里是t的p
 	b.operator = (t);//处理方法就是重载函数
 }
@@ -101,7 +101,7 @@ int main(){
 	double d1 = 10.05, d2 = 1.1;
 	cout << Lmax(x1, x2) << endl;//Lmax可以根据传进的参数来推导类型
 	cout << Lmax(d1, d2) << endl;//隐式推导，若类型不一样会推导不了
-	cout << Lmax<double>(x1, d2) << endl;//显式推导，相当于指定模板，必须使用模板函数
+	cout << Lmax<double>(x1, d2) << endl;
 	cout << Lmax<>(x1, x2) << endl;//显式指定模板,当有int类型的时候也会调用模板
 	Z a, b;
 	cout << Lmax(a, b) << endl;//让cout识别并输出Z需要进行在类中和全局的重载操作
